@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航页 - 快速访问常用网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>快速导航</h1>
+        <div class="search-bar">
+            <div class="search-engine-tabs">
+                <button class="search-tab active" data-engine="baidu">百度</button>
+                <button class="search-tab" data-engine="google">谷歌</button>
+                <button class="search-tab" data-engine="bing">必应</button>
+                <button class="search-tab" data-engine="sogou">搜狗</button>
+            </div>
+            <div class="search-input-wrapper">
+                <input type="text" id="search-input" placeholder="搜索内容...">
+                <button id="search-btn">搜索</button>
+            </div>
+            <div id="search-history" class="search-history">
+                <!-- 搜索历史记录将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="categories-container">
+            <section class="category-section">
+                <h2 class="category-title">📰 工具</h2>
+                <div class="nav-grid">
+                    <a href="https://github.com" class="nav-item" data-name="github" target="_blank"> 
+                        <div class="nav-icon"><img src="images/github.svg" alt="github" width="32" height="32"></div>
+                        <div class="nav-name">GitHub</div>
+                    </a>
+                    <a href="https://key.mpas.top/" class="nav-item" data-name="改键" target="_blank"> 
+                        <div class="nav-icon"><img src="images/键盘.svg" alt="改键" width="32" height="32"></div>
+                        <div class="nav-name">改键</div>
+                    </a>
+                    <a href="http://10.0.0.101/" class="nav-item" data-name="改键" target="_blank"> 
+                        <div class="nav-icon"><img src="images/voron.svg" alt="改键" width="32" height="32"></div>
+                        <div class="nav-name">3D打印机</div>
+                    </a>
+                </div>
+            </section>
+
+
+            <section class="category-section">
+                <h2 class="category-title">📰 3D打印</h2>
+                <div class="nav-grid">
+                    <a href="https://makerworld.com/zh/models/categories" class="nav-item" data-name="MakerWorld" target="_blank"> 
+                        <div class="nav-icon"><img src="images/markerworld.svg" alt="MakerWorld" width="32" height="32"></div>
+                        <div class="nav-name">MakerWorld</div>
+                    </a>
+                    <a href="https://www.stlxz.com" class="nav-item" data-name="3D下载" target="_blank"> 
+                        <div class="nav-icon"><img src="images/3D下载.png" alt="3D下载" width="32" height="32"></div>
+                        <div class="nav-name">3D下载</div>
+                    </a>
+                    <a href="https://www.printables.com/model" class="nav-item" data-name="printables" target="_blank"> 
+                        <div class="nav-icon"><img src="images/printables.svg" alt="printables" width="32" height="32"></div>
+                        <div class="nav-name">printables</div>
+                    </a>
+                    <a href="https://www.thingiverse.com" class="nav-item" data-name="thingiverse" target="_blank"> 
+                        <div class="nav-icon"><img src="images/thingiverse.svg" alt="thingiverse" width="32" height="32"></div>
+                        <div class="nav-name">thingiverse</div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <h2 class="category-title">📰 新闻资讯</h2>
+                <div class="nav-grid">
+                    <a href="https://www.baidu.com" class="nav-item" data-name="百度" target="_blank">
+                        <div class="nav-icon">🔍</div>
+                        <div class="nav-name">百度</div>
+                    </a>
+                    <a href="https://www.sina.com.cn" class="nav-item" data-name="新浪" target="_blank">
+                        <div class="nav-icon">📰</div>
+                        <div class="nav-name">新浪</div>
+                    </a>
+                    <a href="https://www.163.com" class="nav-item" data-name="网易" target="_blank">
+                        <div class="nav-icon">📮</div>
+                        <div class="nav-name">网易</div>
+                    </a>
+                    <a href="https://news.qq.com" class="nav-item" data-name="腾讯新闻" target="_blank">
+                        <div class="nav-icon">🐧</div>
+                        <div class="nav-name">腾讯新闻</div>
+                    </a>
+                    <a href="https://www.toutiao.com" class="nav-item" data-name="今日头条" target="_blank">
+                        <div class="nav-icon">🔥</div>
+                        <div class="nav-name">今日头条</div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <h2 class="category-title">💬 社交媒体</h2>
+                <div class="nav-grid">
+                    <a href="https://weibo.com" class="nav-item" data-name="微博" target="_blank">
+                        <div class="nav-icon">🔖</div>
+                        <div class="nav-name">微博</div>
+                    </a>
+                    <a href="https://www.zhihu.com" class="nav-item" data-name="知乎" target="_blank">
+                        <div class="nav-icon">❓</div>
+                        <div class="nav-name">知乎</div>
+                    </a>
+                    <a href="https://www.douban.com" class="nav-item" data-name="豆瓣" target="_blank">
+                        <div class="nav-icon">📚</div>
+                        <div class="nav-name">豆瓣</div>
+                    </a>
+                    <a href="https://www.qq.com" class="nav-item" data-name="腾讯" target="_blank">
+                        <div class="nav-icon"><img src="images/QQ.svg" alt="3D下载" width="32" height="32"></div>
+                        <div class="nav-name">腾讯</div>
+                    </a>
+                    <a href="https://wx.qq.com" class="nav-item" data-name="微信" target="_blank">
+                        <div class="nav-icon"><img src="images/微信.svg" alt="3D下载" width="32" height="32"></div>
+                        <div class="nav-name">微信</div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <h2 class="category-title">🎬 视频音乐</h2>
+                <div class="nav-grid">
+                    <a href="https://www.bilibili.com" class="nav-item" data-name="哔哩哔哩" target="_blank">
+                        <div class="nav-icon"><img src="images/哔哩哔哩.svg" alt="3D下载" width="32" height="32"></div>
+                        <div class="nav-name">哔哩哔哩</div>
+                    </a>
+                    <a href="https://www.youtube.com" class="nav-item" data-name="YouTube" target="_blank">
+                        <div class="nav-icon">▶️</div>
+                        <div class="nav-name">YouTube</div>
+                    </a>
+                    <a href="https://www.iqiyi.com" class="nav-item" data-name="爱奇艺" target="_blank">
+                        <div class="nav-icon"><img src="images/爱奇艺.svg" alt="3D下载" width="40" height="40"></div>
+                        <div class="nav-name">爱奇艺</div>
+                    </a>
+                    <a href="https://www.youku.com" class="nav-item" data-name="优酷" target="_blank">
+                        <div class="nav-icon"><img src="images/优酷.svg" alt="3D下载" width="32" height="32"></div>
+                        <div class="nav-name">优酷</div>
+                    </a>
+                    <a href="https://www.netflix.com" class="nav-item" data-name="Netflix" target="_blank">
+                        <div class="nav-icon">🎞️</div>
+                        <div class="nav-name">Netflix</div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <h2 class="category-title">🔧 工具服务</h2>
+                <div class="nav-grid">
+                    <a href="https://www.baidu.com/s?wd=天气" class="nav-item" data-name="天气查询" target="_blank">
+                        <div class="nav-icon">🌤️</div>
+                        <div class="nav-name">天气查询</div>
+                    </a>
+                    <a href="https://www.baidu.com/s?wd=翻译" class="nav-item" data-name="在线翻译" target="_blank">
+                        <div class="nav-icon">🌐</div>
+                        <div class="nav-name">在线翻译</div>
+                    </a>
+                    <a href="https://www.baidu.com/s?wd=计算器" class="nav-item" data-name="计算器" target="_blank">
+                        <div class="nav-icon">🧮</div>
+                        <div class="nav-name">计算器</div>
+                    </a>
+                    <a href="https://www.baidu.com/s?wd=词典" class="nav-item" data-name="词典" target="_blank">
+                        <div class="nav-icon">📖</div>
+                        <div class="nav-name">词典</div>
+                    </a>
+                    <a href="https://www.baidu.com/s?wd=地图" class="nav-item" data-name="地图" target="_blank">
+                        <div class="nav-icon">🗺️</div>
+                        <div class="nav-name">地图</div>
+                    </a>
+                    <a href="https://www.iconfont.cn" class="nav-item" data-name="iconfont" target="_blank">
+                        <div class="nav-icon"><img src="images/iconfont.png" alt="iconfont" width="32" height="32"></div>
+                        <div class="nav-name">iconfont</div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 快速导航 | 使用 Ctrl/Cmd + K 快速聚焦搜索框</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
