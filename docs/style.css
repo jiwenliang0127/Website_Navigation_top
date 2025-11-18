@@ -220,7 +220,7 @@ main {
     color: #333;
     background-color: #f5f7fa;
     border-radius: 10px;
-    padding: 0.7rem 0.6rem;
+    padding: 1.2rem 1rem;
     text-align: center;
     transition: all 0.3s ease;
     position: relative;
@@ -230,7 +230,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 70px;
+    min-height: 100px;
 }
 
 .nav-item:hover {
@@ -247,7 +247,7 @@ main {
 
 /* 导航图标 */
 .nav-icon {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
     transition: transform 0.3s ease;
 }
@@ -401,12 +401,12 @@ footer p {
     }
     
     .nav-icon {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     
     .nav-icon img {
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.8rem;
+        height: 1.8rem;
     }
     
     .nav-name {
@@ -441,15 +441,15 @@ footer p {
     }
     
     .nav-item {
-        padding: 0.6rem 0.4rem;
-        min-height: 60px;
+        padding: 1rem 0.8rem;
+        min-height: 80px;
     }
 }
 
 /* 图片图标样式 */
 .nav-icon img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
     object-fit: contain;
 }
 
